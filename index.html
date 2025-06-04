@@ -51,11 +51,24 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://linktr.ee/bartortiz" target="_blank">Bartolome Ortiz-Viso</a><sup>*</sup>,</span>
+                <a href="https://linktr.ee/bartortiz" target="_blank">Bartolome Ortiz-Viso</a><sup>*</sup>,
+                <a href="https://www.ukceh.co.uk/" target="_blank">Jenna L Lawson</a>,
+                <a href="https://www.ukceh.co.uk/" target="_blank">Tom August</a>,
+                <a href="https://www.ukceh.co.uk/" target="_blank">Dylan Carbone</a>,
+                <a href="https://www.ukceh.co.uk/" target="_blank">Katriona Goldman</a><sup>*</sup>,
+                <a href="https://www.ukceh.co.uk/" target="_blank">Grace Skinner</a><sup>*</sup>
+
+              
+              
+              
+              
+              </span>
                   </div>
+
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">UK Centre for Ecology and Hydrology<br>INSECTAI Short Scientific Missions</span>
+                    <span class="author-block">University Of Granada</span>
                   
                   </div>
 
@@ -90,10 +103,27 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Web Code</span>
                   </a>
                 </span>
-
+                  <span class="link-block">
+                    <a href="https://github.com/thebooort/stsm-bartolome-ortiz" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>LepiScrapper Code</span>
+                  </a>
+                </span>
+                  <span class="link-block">
+                    <a href="https://github.com/thebooort/Lepi-Scrapper" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>LepiScrapper Code</span>
+                  </a>
+                </span>
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
@@ -101,7 +131,7 @@
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv (WIP)</span>
                 </a>
               </span>
             </div>
@@ -141,7 +171,7 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="section hero is-light">
   <div class="hero-body">
     <div class="container">
         <!-- Your image here -->
@@ -164,29 +194,43 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Main Outcomes</h2>
         <div class="content has-text-justified">
-          <p>
-           
 
-Main Achievements and Planned Follow-Up
-The main achievements of the STSM are as follows
-•	Textual Data Extraction Tool for Lepidoptera
-    A novel tool was developed to automatically collect and process textual information about butterflies and moths, achieving high coverage for species, genera, and families across Europe and North America. The tool has been released as open-source and accesses websites where content is both reusable and citable.
-•	Pipeline for Aggregation, Translation, and Summarization
-    A modular pipeline was created to aggregate, translate, and clean species descriptions using language models. This system guides a large language model (LLM) to generate species summaries of variable length by combining multiple text sources. It supports flexible summarization and improves the usability of unstructured data. Both open sourced and payed LLMs can be used.
+    <h1>Main Achievements of the STSM</h1>
 
-•	Text_to_traits: Trait Extraction and Structuring Script
-    A semi-supervised method was developed for extracting and completing structured trait databases from textual descriptions. This script uses general-purpose language models to infer traits such as size, color, and dimorphism. The resulting structured data can be store in a table and can be used in lower-resource settings where text-based processing is limited.
-•	Multimodal Baseline Implementation
-    A baseline for multimodal clustering was implemented using a pre-trained Vision Transformer (ViT)-based model. This framework allows the joint embedding of text and images and supports unsupervised clustering to evaluate how well known and novel species can be grouped. The repository is modular and designed for reproducibility.
-•	Datasets Generated
-    Two datasets have been produced:
-1.	A textual dataset containing species descriptions for UK moths.
-2.	A structured trait dataset derived from those descriptions.
-        Additionally, preliminary experiments have been launched for image-to-text training, aimed at generating species descriptions directly from images. 
-•	Scientific Output
-    A paper titled "Moth texting: Creating textual datasets from taxonomical data for automatic insect monitoring" has been submitted to the EcoDL 2025 conference, which is focused on machine learning for ecological data management. The article presents the full methodology, toolchain, and results obtained during the STSM.
+    <h2>Textual Data Extraction Tool for Lepidoptera</h2>
+    <p>
+        A novel tool was developed to automatically collect and process textual information about butterflies and moths, achieving high coverage for species, genera, and families across Europe and North America. The tool has been released as open-source and accesses websites where content is both reusable and citable.
+    </p>
 
-          </p>
+    <h2>Pipeline for Aggregation, Translation, and Summarization</h2>
+    <p>
+        A modular pipeline was created to aggregate, translate, and clean species descriptions using language models. This system guides a large language model (LLM) to generate species summaries of variable length by combining multiple text sources. It supports flexible summarization and improves the usability of unstructured data. Both open-sourced and paid LLMs can be used.
+    </p>
+
+    <h2>Text_to_traits: Trait Extraction and Structuring Script</h2>
+    <p>
+        A semi-supervised method was developed for extracting and completing structured trait databases from textual descriptions. This script uses general-purpose language models to infer traits such as size, color, and dimorphism. The resulting structured data can be stored in a table and used in lower-resource settings where text-based processing is limited.
+    </p>
+
+    <h2>Multimodal Baseline Implementation</h2>
+    <p>
+        A baseline for multimodal clustering was implemented using a pre-trained Vision Transformer (ViT)-based model. This framework allows the joint embedding of text and images and supports unsupervised clustering to evaluate how well known and novel species can be grouped. The repository is modular and designed for reproducibility.
+    </p>
+
+    <h2>Datasets Generated</h2>
+    <ul>
+        <li>A textual dataset containing species descriptions for UK moths.</li>
+        <li>A structured trait dataset derived from those descriptions.</li>
+    </ul>
+    <p>
+        Additionally, preliminary experiments have been launched for image-to-text training, aimed at generating species descriptions directly from images.
+    </p>
+
+    <h2>Scientific Output</h2>
+    <p>
+        A paper titled <em>"Moth texting: Creating textual datasets from taxonomical data for automatic insect monitoring"</em> has been submitted to the EcoDL 2025 conference, which is focused on machine learning for ecological data management. The article presents the full methodology, toolchain, and results obtained during the STSM.
+    </p>
+
         </div>
       </div>
     </div>
